@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizlo</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/image/faveicon.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="flex">
+      <i id="clickMenu" class="ri-menu-2-fill"></i>
+      <div id="menuUl" class="menuJs">
+        <div class="menu flex">
+          <div class="logo">
+            <h2>Piz<span>lo</span></h2>
+          </div>
+          <ul class="flex">
+            <a href="#Home">
+              <li>HOME</li>
+            </a>
+            <a href="#Menu">
+              <li>MENU</li>
+            </a>
+            <a href="#AboutUs">
+              <li>ABOUT US</li>
+            </a>
+            <a href="#Comments">
+              <li>COMMENTS</li>
+            </a>
+            <a href="#Chefs">
+              <li>CHEFS</li>
+            </a>
+            <a href="#Features">
+              <li>FEATURES</li>
+            </a>
+            <a href="#ContactUs">
+              <li>CONTACT US</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="shopping">
+        <button class="btn">sign in</button>
+        <i id="btnCart" class="ri-shopping-cart-2-line"></i>
+        <p id="cartCount" class="cartCount">0</p>
+        <span class="ri-phone-line">
+          <span class="popup">043-354-519</span>
+        </span>
+        <i class="ri-user-line"> </i>
+      </div>
+    </header>
+    <section class="cartItems">
+      <div id="containerItemCart" class="containerItem">
+        <!-- <div class="boxCart">
+          <div>
+            <h2>chese berger</h2>
+            <p>price: 8$</p>
+            <p>count: 1</p>
+          </div>
+          <div>
+            <img src="./assets/image/box-berger-1.png" alt="berger-1" />
+          </div>
+        </div> -->
+      </div>
+    </section>
+    <section class="background flex">
+      <div class="backText">
+        <h1>Welcome to <span class="Spiz">Pizlo</span></h1>
+        <p>
+          The first <br />
+          restaurant with robot operator
+        </p>
+        <button class="btn cart-btn">order now</button>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper flex">
+            <div class="swiper-slide">
+              <h2>Pizza</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate veritatis ipsa quae perferendis, labore suscipit
+                voluptate. Dolorem quo deleniti ducimus commodi expedita!
+                Explicabo magni nemo, maiores deserunt alias quisquam
+                repellendus.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h2>Berger</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate veritatis ipsa quae perferendis, labore suscipit
+                voluptate. Dolorem quo deleniti ducimus commodi expedita!
+                Explicabo magni nemo, maiores deserunt alias quisquam
+                repellendus.
+              </p>
+            </div>
+            <div class="swiper-slide">
+              <h2>Fried chicken</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Cupiditate veritatis ipsa quae perferendis, labore suscipit
+                voluptate. Dolorem quo deleniti ducimus commodi expedita!
+                Explicabo magni nemo, maiores deserunt alias quisquam
+                repellendus.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="backImg">
+        <img src="./assets/image/Hero-1.png" alt="Hero" />
+      </div>
+    </section>
+    <section id="Home">
+      <h2 class="container">Our catgory:</h2>
+      <div class="flex-w-wrap">
+        <div class="box">
+          <img src="./assets/image/box-1.png" alt="d" />
+          <h4>berger</h4>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-2.png" alt="d" />
+          <h4>Pizza</h4>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-3.png" alt="d" />
+          <h4>salad</h4>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-4.png" alt="d" />
+          <h4>fries</h4>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-5.png" alt="d" />
+          <h4>fried chicken</h4>
+        </div>
+      </div>
+    </section>
+    <section id="Menu" class="MenuB">
+      <div class="title">
+        <h2 class="container">our pizzas:</h2>
+        <p>more...</p>
+      </div>
+      <div id="pizzaBox" class="flex-w-wrap">
+        <div class="box">
+          <img src="./assets/image/box-pizza-1.png" alt="" />
+          <h4>peperoni</h4>
+          <div class="items">
+            <button onclick="addToCart('peperoni')">
+              <i class="bxr bx-cart-plus" style="color: #000000"></i>
+            </button>
+            <i class="bxr bx-cart-minus" style="color: #000000"></i>
+            <i class="ri-heart-line"></i>
+          </div>
+          <div class="rate">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-pizza-2.png" alt="" />
+          <h4>vetable</h4>
+          <div class="items">
+            <button onclick="addToCart('vetable')">
+              <i class="bxr bx-cart-plus" style="color: #000000"></i>
+            </button>
+            <i class="bxr bx-cart-minus" style="color: #000000"></i>
+            <i class="ri-heart-line"></i>
+          </div>
+          <div class="rate">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-pizza-3.png" alt="" />
+          <h4>margarita</h4>
+          <div class="items">
+            <button onclick="addToCart('margarita')">
+              <i class="bxr bx-cart-plus" style="color: #000000"></i>
+            </button>
+            <i class="bxr bx-cart-minus" style="color: #000000"></i>
+            <i class="ri-heart-line"></i>
+          </div>
+          <div class="rate">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-pizza-4.png" alt="" />
+          <h4>salami</h4>
+          <div class="items">
+            <button onclick="addToCart('salami')">
+              <i class="bxr bx-cart-plus" style="color: #000000"></i>
+            </button>
+            <i class="bxr bx-cart-minus" style="color: #000000"></i>
+            <i class="ri-heart-line"></i>
+          </div>
+          <div class="rate">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Menu" class="MenuP">
+      <div class="title">
+        <h2 class="container">our bergers:</h2>
+        <p>more...</p>
+      </div>
+      <div id="bergerBox" class="flex-w-wrap">
+        <div class="box">
+          <img src="./assets/image/box-berger-1.png" alt="" />
+          <h4>chese berger</h4>
+          <div class="items">
+            <button onclick="addToCart('chese berger')">
+              <i class="bxr bx-cart-plus" style="color: #000000"></i>
+            </button>
+            <i class="bxr bx-cart-minus" style="color: #000000"></i>
+            <i class="ri-heart-line"></i>
+          </div>
+          <div class="rate">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-berger-2.png" alt="" />
+          <h4>meat berger</h4>
+          <div class="items">
+            <button onclick="addToCart('meat berger')">
+              <i class="bxr bx-cart-plus" style="color: #000000"></i>
+            </button>
+            <i class="bxr bx-cart-minus" style="color: #000000"></i>
+            <i class="ri-heart-line"></i>
+          </div>
+          <div class="rate">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-berger-3.png" alt="" />
+          <h4>chicken berger</h4>
+          <div class="items">
+            <button onclick="addToCart('chicken berger')">
+              <i class="bxr bx-cart-plus" style="color: #000000"></i>
+            </button>
+            <i class="bxr bx-cart-minus" style="color: #000000"></i>
+            <i class="ri-heart-line"></i>
+          </div>
+          <div class="rate">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+        <div class="box">
+          <img src="./assets/image/box-berger-4.png" alt="" />
+          <h4>onion berger</h4>
+          <div class="items">
+            <button onclick="addToCart('onion berger')">
+              <i class="bxr bx-cart-plus" style="color: #000000"></i>
+            </button>
+            <i class="bxr bx-cart-minus" style="color: #000000"></i>
+            <i class="ri-heart-line"></i>
+          </div>
+          <div class="rate">
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-fill"></i>
+            <i class="ri-star-line"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="AboutUs" class="flex-w-wrap">
+      <div>
+        <img src="./assets/image/Hero-2.png" alt="Hero" />
+      </div>
+      <div>
+        <h2>why us?</h2>
+        <ul>
+          <li><span class="list">1</span> support 24/7</li>
+          <li><span class="list">2</span> delivery fast</li>
+          <li><span class="list">3</span> safe pay</li>
+          <li><span class="list">4</span> very close</li>
+        </ul>
+      </div>
+    </section>
+    <section id="Comments" class="flex-w-wrap">
+      <div class="box">
+        <img src="./assets/image/box-comments-1.webp" alt="comments" />
+        <h2>john doe</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          ratione omnis rem, necessitatibus amet sint officia quidem totam
+          saepe, placeat exercitationem laborum et minus est nam facere vitae
+          neque molestiae.
+        </p>
+      </div>
+      <div class="box">
+        <img src="./assets/image/box-comments-2.svg" alt="comments" />
+        <h2>john doe</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          ratione omnis rem, necessitatibus amet sint officia quidem totam
+          saepe, placeat exercitationem laborum et minus est nam facere vitae
+          neque molestiae.
+        </p>
+      </div>
+      <div class="box">
+        <img src="./assets/image/box-comments-3.webp" alt="comments" />
+        <h2>john doe</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+          ratione omnis rem, necessitatibus amet sint officia quidem totam
+          saepe, placeat exercitationem laborum et minus est nam facere vitae
+          neque molestiae.
+        </p>
+      </div>
+    </section>
+    <section id="Chefs" class="chefPart flex-w-wrap">
+      <h2 class="whiteH">Chefs</h2>
+      <div class="flex-w-wrap">
+        <div class="box box-bg">
+          <img src="./assets/image/box-chef-1.png" alt="chef" />
+          <h2>John son</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rem
+            odit reprehenderit vero a vitae enim consequuntur porro animi,
+            recusandae ut aperiam ducimus quaerat nesciunt voluptas
+          </p>
+        </div>
+        <div class="box box-bg">
+          <img src="./assets/image/box-chef-2.png" alt="chef" />
+          <h2>Sarah stowart</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rem
+            odit reprehenderit vero a vitae enim consequuntur porro animi,
+            recusandae ut aperiam ducimus quaerat nesciunt voluptas
+          </p>
+        </div>
+
+        <div class="box box-bg">
+          <img src="./assets/image/box-chef-3.png" alt="chef" />
+          <h2>walter tomy</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis rem
+            odit reprehenderit vero a vitae enim consequuntur porro animi,
+            recusandae ut aperiam ducimus quaerat nesciunt voluptas
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="Features">
+      <h2>our features</h2>
+      <div class="flex-w-wrap">
+        <div class="box box-bg">
+          <img src="./assets/image/box-feature-1.jpg" alt="feature-1" />
+          <h2>a nice place</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam
+            quas atque consequuntur ipsam soluta fuga lorem ipsum
+          </p>
+          <button class="btn btn-special">reserve now</button>
+        </div>
+        <div class="box box-bg">
+          <img src="./assets/image/box-feature-2.jpg" alt="feature-2" />
+          <h2>custom your foods</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus
+            neque maxime ad cum fugiat magnam quasi pariatur eius nihil
+          </p>
+          <button class="btn btn-special">custom now</button>
+        </div>
+        <div class="box box-bg">
+          <img src="./assets/image/box-feature-3.jpg" alt="feature-3" />
+          <h2>+50 types of food</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde eum
+            odit sunt aut magni culpa amet nobis dignissimos beatae cum!
+          </p>
+          <button class="btn btn-special">order now</button>
+        </div>
+      </div>
+    </section>
+    <section id="ContactUs">
+      <div class="flex-w-wrap">
+        <div>
+          <img src="./assets/image/box-4.png" alt="" />
+        </div>
+        <div>
+          <h2>contact us</h2>
+          <ul>
+            <li>our email: example@gmail.com</li>
+            <li>our instagram: pizlo30</li>
+            <li>out phone number: 094-421-405</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="flex-w-wrap">
+        <div>
+          <ul>
+            <a href="#Home"><li>HOME</li></a>
+            <a href="#Menu"><li>MENU</li></a>
+            <a href="#AboutUs"><li>ABOUT US</li></a>
+            <a href="#Comments"><li>COMMENTS</li></a>
+            <a href="#Chefs"><li>CHEFS</li></a>
+            <a href="#Features"><li>FEATURES</li></a>
+            <a href="#ContactUs"><li>CONTACT US</li></a>
+          </ul>
+        </div>
+        <div>
+          <input type="text" placeholder="enter your email..." />
+          <button>submit</button>
+        </div>
+        <div>
+          <h4>our other restaurant</h4>
+          <ul>
+            <li>Washengton</li>
+            <li>New york</li>
+            <li>italy</li>
+            <li>iran</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="./assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        cssMode: true,
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 2000,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+        mousewheel: true,
+        keyboard: true,
+      });
+    </script>
+  </body>
+</html>
